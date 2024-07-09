@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Item from "./Components/item";
+import Cart from "./Components/cart";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Item
+				name="Asus Tuf Gaming 15"
+				price="75000"
+			/>
+			<Item
+				name="Gigabyte G24F 2 Gaming"
+				price="12400"
+			/>
+			<Item
+				name="ReadGear Keyboard"
+				price="1200"
+			/>
+			<Item
+				name="Realme X7 Max"
+				price="25000"
+			/>
+			<Cart />
+		</div>
+	);
 }
 
 export default App;
